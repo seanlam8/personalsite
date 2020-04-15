@@ -1,0 +1,122 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="container">
+        <img class="circular--square" src="assets/images/pfp.jpg" />
+        <br>
+        <br>
+        <p>Hi. I'm Sean</p>
+        <br>
+        <h1>Electrical Engineering and Computer Sciences student @ UC Berkeley</h1>
+        <br>
+        <h1>Class of 2021</h1>
+        <br>
+        <br>
+        <div class="links">
+            <a class="link_images" href="https://www.linkedin.com/in/sean-lam-a428a0156">
+                <img class="linked_in" src="assets/images/LinkedIn icon.png"></a>
+            <a class="link_images" href="https://github.com/seanlam8">
+                <img class="github" src="assets/images/github-logo.png"></a>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    body {
+        display: flex;
+        background: rgb(207, 222, 243);
+        background: linear-gradient(90deg, #DAE2F8, #D6A4A4);
+    }
+    
+    .container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container>* {
+        margin: 0 auto;
+    }
+    
+    p {
+        border-right: solid 3px black;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 28px;
+        color: black;
+        text-align: center;
+        align-content: center;
+        vertical-align: center;
+    }
+    
+    h1 {
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Montserrat', monospace;
+        font-weight: lighter;
+        font-size: 18px;
+        color: black;
+        vertical-align: center;
+    }
+    /* Animation */
+    
+    p {
+        animation: animated-text 2s steps(13, end) 1s 1 normal both, animated-cursor 800ms steps(29, end) infinite;
+    }
+    
+    @keyframes animated-text {
+        from {
+            width: 0;
+        }
+        to {
+            width: 205px;
+        }
+    }
+    /* cursor animations */
+    
+    @keyframes animated-cursor {
+        from {
+            border-right-color: black;
+        }
+        to {
+            border-right-color: transparent;
+        }
+    }
+    
+    .circular--square {
+        border-radius: 50%;
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
+        border-bottom-left-radius: 50% 50%;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .linked_in {
+        width: 40px;
+        height: 40px;
+        padding-right: 30px;
+    }
+    
+    .github {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .horizontal_list {
+        display: inline;
+    }
+    
+    .link_images {
+        width: 50px;
+        height: 50px;
+    }
+</style>
