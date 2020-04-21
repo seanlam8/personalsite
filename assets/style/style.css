@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 body {
-    display: flex;
-    background: #ECE9E6;
-    /* background: linear-gradient(90deg, #DAE2F8, #D6A4A4); */
+    /* display: flex; */
+    background: #fffaf0;
+    /* background: linear-gradient(150deg, #f5f5dc, #fffaf0); */
 }
 
 .container {
+    padding-top: 10%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -108,4 +109,31 @@ i {
 
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Manrope', monospace;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    text-decoration: underline;
 }
